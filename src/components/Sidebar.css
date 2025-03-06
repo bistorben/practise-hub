@@ -1,0 +1,23 @@
+.Sidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+
+  button {
+    position: absolute;
+    width: 50px;
+    right: -50px;
+  }
+}
+
+.Sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.Sidebar.open {
+  transform: translateX(0);
+}
