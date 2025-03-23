@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./Sidebar.css";
+import Navigation from "./Navigation.jsx";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,7 @@ const Sidebar = () => {
     <>
       <nav ref={sidebarRef} className={`Sidebar ${isOpen ? "open" : "closed"}`}>
         <button onClick={toggleSidebar}>on/off</button>
+        <Navigation />
       </nav>
     </>
   );
