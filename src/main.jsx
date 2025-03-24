@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import Home from "./components/Home.jsx";
-import ComponentOne from "./components/ComponentOne.jsx";
+import HeroBoschCom from "./components/HeroBoschCom.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
-      { path: "componentone", element: <ComponentOne /> },
+      { path: "heroboschcom", element: <HeroBoschCom /> },
     ],
   },
 ]);

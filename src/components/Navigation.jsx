@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className="Navigation">
         <h2>Components</h2>
         <ul>
-          <NavLink to="componentone">ComponentOne</NavLink>
+          <NavLink to="heroboschcom">HeroBoschCom</NavLink>
         </ul>
       </div>
     </>
