@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import { GoArrowRight } from "react-icons/go";
+
 import "./Sidebar.css";
 import Navigation from "./Navigation.jsx";
 
@@ -30,7 +32,9 @@ const Sidebar = () => {
   return (
     <>
       <nav ref={sidebarRef} className={`Sidebar ${isOpen ? "open" : "closed"}`}>
-        <button onClick={toggleSidebar}>on/off</button>
+        <button onClick={toggleSidebar}>
+          <GoArrowRight className={`arrow-right ${isOpen ? "rotated" : ""}`} />
+        </button>
         <Navigation />
       </nav>
     </>
