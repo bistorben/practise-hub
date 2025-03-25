@@ -11,10 +11,9 @@ const HeroBoschCom = () => {
         rel="noopener noreferrer"
       >
         <h1>
-          THE MORE YOU BOSCH, THE MORE YOU FEEL LIKE A BOSCH{" "}
-          <span>
-            {" "}
-            <RxExternalLink className="external-icon" />
+          <span>THE MORE YOU BOSCH, THE MORE YOU FEEL LIKE A </span>
+          <span className="bosch-link">
+            BOSCH <RxExternalLink className="external-icon" />
           </span>
         </h1>
       </a>
