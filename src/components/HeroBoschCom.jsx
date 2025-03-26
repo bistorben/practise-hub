@@ -1,6 +1,8 @@
 import "./HeroBoschCom.css";
 import { Link } from "react-router-dom";
 import { RxExternalLink } from "react-icons/rx";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 import heroImage from "../assets/HeroBoschCom/bosch_hero_big.webp";
 import heroLinkImage from "../assets/HeroBoschCom/bosch_hero_small.webp";
 
@@ -25,16 +27,31 @@ const HeroBoschCom = () => {
         </div>
 
         <div className="hero-link-list">
-          <img src={heroLinkImage} alt="link image" />
+          <div className="link-img-wrapper">
+            <img src={heroLinkImage} alt="link image" />
+          </div>
+          <h2>
+            <span>Bosch Tech Compass </span>
+            <span className="h2-link">
+              2025 <MdOutlineKeyboardArrowRight />
+            </span>
+          </h2>
           <ul>
             <li>
-              <a href="">test123</a>
+              <a href="">
+                About us
+                <MdOutlineKeyboardArrowRight />
+              </a>
             </li>
             <li>
-              <a href="">test123</a>
+              <a href="">
+                Our open positions <RxExternalLink />
+              </a>
             </li>
             <li>
-              <a href="">test123</a>
+              <a href="">
+                Get in touch <MdOutlineKeyboardArrowRight />
+              </a>
             </li>
           </ul>
         </div>
