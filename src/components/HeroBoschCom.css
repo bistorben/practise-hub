@@ -1,5 +1,7 @@
 .HeroBoschCom {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
   a {
     text-decoration: none;
     /* display: inline-flex;
@@ -8,7 +10,7 @@
     & h1 {
       font-size: 36px;
       letter-spacing: 1.2px;
-      padding: 10px;
+      margin: 20px;
     }
     &:hover,
     &:visited:hover {
@@ -20,6 +22,17 @@
     }
     .bosch-link {
       white-space: nowrap;
+    }
+  }
+  .hero-img-wrapper {
+    margin-right: 20px;
+
+    .hero-img-big {
+      margin-bottom: 20px;
+      & img {
+        display: block;
+        width: 100%;
+      }
     }
   }
 }
