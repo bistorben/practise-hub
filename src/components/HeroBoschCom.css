@@ -2,6 +2,7 @@
   margin-top: 100px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   a {
     text-decoration: none;
 
@@ -9,6 +10,7 @@
       font-size: 36px;
       letter-spacing: 1.2px;
       margin: 20px 20px 40px 20px;
+      max-width: 1100px;
     }
     &:hover,
     &:visited:hover {
@@ -83,23 +85,43 @@
 
 /* Medium Devices (≥ 768px) */
 @media screen and (min-width: 768px) {
+  .HeroBoschCom a h1 {
+    font-size: 40px;
+    .bosch-link svg {
+      font-size: 40px;
+    }
+  }
   .hero-link-list {
     display: flex;
     gap: 2rem;
-    #hero-link-img {
-      width: 360px;
+
+    .link-img-wrapper,
+    ul {
+      flex: 1;
     }
   }
 }
 
 /* for styling reasons (≥ 992px) */
 @media screen and (min-width: 992px) {
+  .HeroBoschCom a h1 {
+    font-size: 64px;
+    .bosch-link svg {
+      font-size: 50px;
+    }
+  }
   .hero-img-wrapper {
     display: flex;
+    gap: 1rem;
   }
   .hero-link-list {
     flex-direction: column;
     gap: 0;
+    flex: 1;
+    max-width: 352px;
+  }
+  .hero-img-big {
+    flex: 2;
   }
 }
 
@@ -113,7 +135,4 @@
 
 /* Ultra Wide Screens (≥ 1536px) */
 @media screen and (min-width: 1536px) {
-  h1 {
-    background-color: yellow;
-  }
 }
