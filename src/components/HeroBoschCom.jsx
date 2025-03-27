@@ -28,14 +28,15 @@ const HeroBoschCom = () => {
 
         <div className="hero-link-list">
           <div className="link-img-wrapper">
-            <img src={heroLinkImage} alt="link image" />
+            <img src={heroLinkImage} id="hero-link-img" alt="link image" />
+            <h2>
+              <span>Bosch Tech Compass </span>
+              <span className="h2-link">
+                2025 <MdOutlineKeyboardArrowRight />
+              </span>
+            </h2>
           </div>
-          <h2>
-            <span>Bosch Tech Compass </span>
-            <span className="h2-link">
-              2025 <MdOutlineKeyboardArrowRight />
-            </span>
-          </h2>
+
           <ul>
             <li>
               <a href="">
