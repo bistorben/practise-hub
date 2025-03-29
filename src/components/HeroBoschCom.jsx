@@ -22,12 +22,17 @@ const HeroBoschCom = () => {
         </h1>
       </a>
       <div className="hero-img-wrapper">
-        <div className="hero-img-big">
+        <a
+          className="hero-img-big"
+          href="https://www.likeabosch.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={heroImage} alt="hero image" />
-        </div>
+        </a>
 
         <div className="hero-link-list">
-          <div className="link-img-wrapper">
+          <a className="link-img-wrapper">
             <img src={heroLinkImage} id="hero-link-img" alt="link image" />
             <h2>
               <span>Bosch Tech Compass </span>
@@ -35,7 +40,7 @@ const HeroBoschCom = () => {
                 2025 <MdOutlineKeyboardArrowRight />
               </span>
             </h2>
-          </div>
+          </a>
 
           <ul>
             <li>

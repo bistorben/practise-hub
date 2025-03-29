@@ -30,6 +30,7 @@
       }
     }
   }
+
   .hero-img-wrapper {
     margin-right: 15px;
     .hero-img-big {
@@ -43,6 +44,7 @@
       margin-left: 15px;
       .link-img-wrapper {
         margin-bottom: 15px;
+        cursor: pointer;
         & img {
           display: block;
           width: 100%;
@@ -77,6 +79,10 @@
       }
     }
   }
+}
+
+.HeroBoschCom:has(.hero-img-big:hover) h1 {
+  color: #007bc0;
 }
 
 /* Small Devices (≥ 480px) */
