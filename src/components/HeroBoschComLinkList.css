@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  li {
+    margin-bottom: 25px;
+    .link-from-list {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      /* specifity issues */
+      color: rgb(4 124 193) !important;
+      font-weight: 300;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

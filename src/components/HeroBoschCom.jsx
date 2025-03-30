@@ -5,6 +5,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 import heroImage from "../assets/HeroBoschCom/bosch_hero_big.webp";
 import heroLinkImage from "../assets/HeroBoschCom/bosch_hero_small.webp";
+import HeroBoschComLinkList from "./HeroBoschComLinkList.jsx";
 
 const HeroBoschCom = () => {
   return (
@@ -42,7 +43,8 @@ const HeroBoschCom = () => {
             </h2>
           </a>
 
-          <ul>
+          <HeroBoschComLinkList />
+          {/* <ul>
             <li>
               <a href="">
                 About us
@@ -59,7 +61,7 @@ const HeroBoschCom = () => {
                 Get in touch <MdOutlineKeyboardArrowRight />
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </section>
