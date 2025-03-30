@@ -16,7 +16,9 @@ const Navigation = () => {
       </div>
 
       <footer className="nav-footer">
-        <NavLink className="backend-link">backend</NavLink>
+        <NavLink className="backend-link" to="backend">
+          backend
+        </NavLink>
       </footer>
     </section>
   );
