@@ -44,24 +44,6 @@ const HeroBoschCom = () => {
           </a>
 
           <HeroBoschComLinkList />
-          {/* <ul>
-            <li>
-              <a href="">
-                About us
-                <MdOutlineKeyboardArrowRight />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Our open positions <RxExternalLink />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Get in touch <MdOutlineKeyboardArrowRight />
-              </a>
-            </li>
-          </ul> */}
         </div>
       </div>
     </section>
