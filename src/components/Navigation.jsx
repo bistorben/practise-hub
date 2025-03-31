@@ -1,5 +1,6 @@
 import "./Navigation.css";
 import { NavLink } from "react-router-dom";
+import { MdOutlineModeEdit } from "react-icons/md";
 
 const Navigation = () => {
   return (
@@ -16,8 +17,9 @@ const Navigation = () => {
       </div>
 
       <footer className="nav-footer">
-        <NavLink className="backend-link" to="backend">
-          backend
+        <NavLink className="backend-link" to="edit">
+          <span>edit</span>
+          <MdOutlineModeEdit />
         </NavLink>
       </footer>
     </section>
