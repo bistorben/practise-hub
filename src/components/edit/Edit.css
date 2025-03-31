@@ -1,6 +1,40 @@
 .Edit {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   width: 900px;
   margin: 0 auto;
   padding: 20px;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 400px;
+    input {
+      width: 200px;
+    }
+  }
+
+  .checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    width: 213px;
+  }
+
+  button {
+    width: 150px;
+    background-color: lightgreen;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px 10px;
+  }
 }

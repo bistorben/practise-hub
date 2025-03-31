@@ -67,7 +67,7 @@ const Edit = () => {
             onChange={handleHrefChange}
           />
         </div>
-        <div className="form-group checkbox-group">
+        <div className="checkbox-group">
           <label htmlFor="external">External Link:</label>
           <input
             type="checkbox"
