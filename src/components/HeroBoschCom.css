@@ -1,12 +1,12 @@
-/* !!! needs to be refactored !!! */
-
 .HeroBoschCom {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   a {
     text-decoration: none;
+    color: black;
 
     h1 {
       font-size: 36px;
@@ -14,119 +14,112 @@
       margin: 20px 20px 40px 20px;
       max-width: 1100px;
     }
-    &:hover,
-    &:visited:hover {
+
+    &:hover h1,
+    &:visited:hover h1 {
       color: #007bc0;
     }
-    &:visited {
-      color: black;
-      text-decoration: none;
-    }
-    .bosch-link {
-      white-space: nowrap;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      svg {
-        font-size: 30px;
-      }
+  }
+
+  .bosch-link {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+      font-size: 30px;
     }
   }
 
   .hero-img-wrapper {
     margin-right: 15px;
-    .hero-img-big {
-      margin-bottom: 15px;
-      & img {
-        display: block;
-        width: 100%;
-      }
-    }
-    .hero-link-list {
-      margin-top: 15px;
-      margin-left: 15px;
+  }
 
-      .link-img-wrapper {
-        margin-bottom: 15px;
-        cursor: pointer;
-        & img {
-          display: block;
-          width: 100%;
-        }
-        h2 {
-          font-size: 20px;
-          margin: 15px 0 30px 0;
+  .hero-img-big {
+    margin-bottom: 15px;
 
-          .h2-link {
-            white-space: nowrap;
-            display: inline-flex;
-            align-items: center;
-          }
-        }
-      }
+    img {
+      display: block;
+      width: 100%;
     }
   }
-}
 
-.HeroBoschCom:has(.hero-img-big:hover) h1 {
-  color: #007bc0;
-}
+  .hero-link-list {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
 
-/* Small Devices (≥ 480px) */
-@media screen and (min-width: 480px) {
-}
+  .link-img-wrapper {
+    margin-bottom: 15px;
+    cursor: pointer;
 
-/* Medium Devices (≥ 768px) */
-@media screen and (min-width: 768px) {
-  .HeroBoschCom a h1 {
-    font-size: 40px;
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 15px 0 30px 0;
+    }
+  }
+
+  .h2-link {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &:has(.hero-img-big:hover) h1 {
+    color: #007bc0;
+  }
+
+  /* Media Queries */
+
+  @media screen and (min-width: 768px) {
+    a h1 {
+      font-size: 40px;
+    }
+
     .bosch-link svg {
       font-size: 40px;
     }
-  }
-  .hero-link-list {
-    display: flex;
-    gap: 2rem;
 
-    .link-img-wrapper,
-    ul {
-      flex: 1;
+    .hero-link-list {
+      display: flex;
+      gap: 2rem;
+
+      .link-img-wrapper,
+      ul {
+        flex: 1;
+      }
     }
   }
-}
 
-/* for styling reasons (≥ 992px) */
-@media screen and (min-width: 992px) {
-  .HeroBoschCom a h1 {
-    font-size: 64px;
+  @media screen and (min-width: 992px) {
+    a h1 {
+      font-size: 64px;
+    }
+
     .bosch-link svg {
       font-size: 50px;
     }
-  }
-  .hero-img-wrapper {
-    display: flex;
-    gap: 1rem;
-  }
-  .hero-link-list {
-    flex-direction: column;
-    gap: 0;
-    flex: 1;
-    max-width: 352px;
-    margin-top: 0 !important;
-  }
-  .hero-img-big {
-    flex: 2;
-  }
-}
 
-/* Large Devices (≥ 1024px) */
-@media screen and (min-width: 1024px) {
-}
+    .hero-img-wrapper {
+      display: flex;
+      gap: 1rem;
+    }
 
-/* Extra Large Devices (≥ 1280px) */
-@media screen and (min-width: 1280px) {
-}
+    .hero-link-list {
+      flex-direction: column;
+      flex: 1;
+      max-width: 352px;
+      margin-top: 0;
+    }
 
-/* Ultra Wide Screens (≥ 1536px) */
-@media screen and (min-width: 1536px) {
+    .hero-img-big {
+      flex: 2;
+    }
+  }
 }
