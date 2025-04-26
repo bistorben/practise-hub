@@ -28,7 +28,7 @@ const Edit = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5005/api/hero-bosch", {
+      const res = await fetch("http://localhost:3000/api/hero-bosch", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -10,10 +10,6 @@ const HeroBoschComLinkList = () => {
     { label: "Get in touch", href: "", external: false },
   ];
 
-  links.map((link, i) => {
-    console.log(`link hat einen index von ${i}`);
-  });
-
   return (
     <ul>
       {links.map((link, i) => (
